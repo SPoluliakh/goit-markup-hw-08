@@ -1,0 +1,96 @@
+.mobile-menu-btn,
+.mobile-menu-modal-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus,
+.mobile-menu-modal-btn:hover,
+.mobile-menu-modal-btn:focus {
+  color: $hover-color;
+}
+
+.mobile-menu-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu-btn__open,
+.mobile-menu-modal-btn__close {
+  fill: currentColor;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  padding-top: 48px;
+  padding-left: 40px;
+  overflow-y: scroll;
+
+  background-color: $accent-color;
+  box-shadow: $mobile-menu-shadow;
+
+  display: none;
+}
+
+.mobile-menu__nav {
+  margin-bottom: 306px;
+}
+
+.mobile-menu__list,
+.mobile-menu-contact,
+.mobile-sotial {
+  @extend %list;
+}
+
+.mobile-menu__link {
+  @extend %link;
+  @include text-decor(500, 40px, 1.17, 0.02em, $title-color);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact__tel {
+  @extend %link;
+  @include text-decor(500, 34px, 1.17, 0.02em, $hover-color);
+}
+
+.mobile-menu-contact__mail {
+  @extend %link;
+  @include text-decor(500, 24px, 1.17, 0.02em, $text-color);
+}
+
+.mobile-menu-contact__item:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact {
+  margin-bottom: 64px;
+}
+
+.mobile-sotial {
+  @include display-flex(flex-start);
+}
+
+.mobile-sotial__link {
+  @extend %link;
+  @include text-decor(500, 18px, 1.2, 0.02em, $hover-color);
+}
+
+.mobile-sotial__item:not(:last-child)::after {
+  content: ' ';
+  width: 22px;
+  border: $order-form-input;
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin: 0 10px;
+}

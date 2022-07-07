@@ -291,13 +291,15 @@ img {
   overflow: hidden;
 }
 
-.call__list, .project-list, .portfolio-section__nav {
+.mobile-menu__list,
+.mobile-menu-contact,
+.mobile-sotial, .call__list, .project-list, .portfolio-section__nav {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.project-list__link {
+.mobile-sotial__link, .mobile-menu-contact__mail, .mobile-menu-contact__tel, .mobile-menu__link, .project-list__link {
   text-decoration: none;
   color: inherit;
 }
@@ -321,6 +323,19 @@ img {
   .container {
     width: 480px;
   }
+}
+
+.header__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -681,4 +696,122 @@ img {
 .subscription__icon {
   fill: currentColor;
   margin-left: 10px;
+}
+
+.mobile-menu-btn,
+.mobile-menu-modal-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus,
+.mobile-menu-modal-btn:hover,
+.mobile-menu-modal-btn:focus {
+  color: #2196f3;
+}
+
+.mobile-menu-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu-btn__open,
+.mobile-menu-modal-btn__close {
+  fill: currentColor;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding-top: 48px;
+  padding-left: 40px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  display: none;
+}
+
+.mobile-menu__nav {
+  margin-bottom: 306px;
+}
+
+.mobile-menu__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact__tel {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-menu-contact__mail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-menu-contact__item:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-contact {
+  margin-bottom: 64px;
+}
+
+.mobile-sotial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-sotial__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-sotial__item:not(:last-child)::after {
+  content: " ";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 0 10px;
 }/*# sourceMappingURL=portfolio.css.map */

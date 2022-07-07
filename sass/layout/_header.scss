@@ -7,6 +7,11 @@
   letter-spacing: 0.02em;
 }
 
+.header__container {
+  position: relative;
+  @include display-flex(space-between);
+}
+
 .header__list,
 .header-contact {
   @media screen and (max-width: 767px) {

@@ -9,29 +9,37 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-   
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
     <header class="header">
       <div class="container header__container">
-        <nav class="header__nav ">
-          <a class="logo logo--header " href="./index.html">Web<span class="logo__half">Studio</span></a>
-          <ul class="header__list ">
-            <li class="header__item ">
+        <nav class="header__nav">
+          <a class="logo logo--header" href="./index.html"
+            >Web<span class="logo__half">Studio</span></a
+          >
+          <ul class="header__list">
+            <li class="header__item">
               <a class="header__link header__link--current" href="./index.html">Студия</a>
             </li>
-            <li class="header__item ">
+            <li class="header__item">
               <a class="header__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header__item ">
+            <li class="header__item">
               <a class="header__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
+        <!-- mobile-menu-btn -->
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-btn__open" width="40" height="40">
+            <use href="./images/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
 
-        <ul class="header-contact ">
+        <ul class="header-contact">
           <li class="header-contact__item">
             <a class="header-contact__link" href="mailto:info@devstudio.com">
               <svg class="header-contact__icone" aria-hidden="true" width="16px" height="12px">
@@ -48,6 +56,44 @@
               +38 096 111 11 11
             </a>
           </li>
+        </ul>
+      </div>
+
+      <!-- mobile-menu -->
+
+      <div class="mobile-menu">
+        <button class="mobile-menu-modal-btn" type="button">
+          <svg class="mobile-menu-modal-btn__close" width="40" height="40">
+            <use href="./images/sprite.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu-contact">
+          <li class="mobile-menu-contact__item">
+            <a class="mobile-menu-contact__tel" href="tel:+38 0961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu-contact__item">
+            <a class="mobile-menu-contact__mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-sotial">
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Instagram</a></li>
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Twitter</a></li>
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Facebook</a></li>
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">LinkedIn</a></li>
         </ul>
       </div>
     </header>
@@ -67,7 +113,7 @@
 
           <ul class="advantage-list">
             <li class="advantage-list__item">
-              <div class="advantage-list__icon ">
+              <div class="advantage-list__icon">
                 <svg width="66px" height="70px" aria-hidden="true">
                   <use class="antenna" href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
@@ -133,7 +179,7 @@
               >
             </li>
             <li class="examples-list__item">
-              <a class="examples-list__link href=""
+              <a class="examples-list__link href="
                 ><div class="examples-list__visual">
                   <img
                     src="./images/imgg.jpg"
@@ -145,7 +191,7 @@
               >
             </li>
             <li class="examples-list__item">
-              <a class="examples-list__link href=""
+              <a class="examples-list__link href="
                 ><div class="examples-list__visual">
                   <img
                     src="./images/imggg.jpg"
@@ -166,11 +212,13 @@
           <h2 class="ourteam-section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-             <img srcset="./images/team-1-450.jpg 1x, ./images/team-1-900.jpg 2x"
-              src="./images/team-1-450.jpg" 
-              alt="Игорь Демьяненко"
-              width="450" />
-              
+              <img
+                srcset="./images/team-1-450.jpg 1x, ./images/team-1-900.jpg 2x"
+                src="./images/team-1-450.jpg"
+                alt="Игорь Демьяненко"
+                width="450"
+              />
+
               <div class="team-list__person">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -204,10 +252,12 @@
             </li>
 
             <li class="team-list__item">
-              <img srcset="./images/team-2-450.jpg 1x, ./images/team-2-900.jpg 2x"
-              src="./images/team-2-450.jpg" 
-              alt="Ольга Репина" 
-              width="450"/>
+              <img
+                srcset="./images/team-2-450.jpg 1x, ./images/team-2-900.jpg 2x"
+                src="./images/team-2-450.jpg"
+                alt="Ольга Репина"
+                width="450"
+              />
               <div class="team-list__person">
                 <h3 class="team-list__title">Ольга Репина</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -241,10 +291,12 @@
             </li>
 
             <li class="team-list__item">
-              <img srcset="./images/team-3-450.jpg 1x, ./images/team-3-900.jpg 2x"
-              src="./images/team-3-450.jpg"
-              alt="Николай Тарасов"
-              width="450" />
+              <img
+                srcset="./images/team-3-450.jpg 1x, ./images/team-3-900.jpg 2x"
+                src="./images/team-3-450.jpg"
+                alt="Николай Тарасов"
+                width="450"
+              />
               <div class="team-list__person">
                 <h3 class="team-list__title">Николай Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -278,10 +330,12 @@
             </li>
 
             <li class="team-list__item">
-             <img srcset="./images/team-4-450.jpg 1x, ./images/team-4-900.jpg 2x"
-              src="./images/team-4-450.jpg" 
-              alt="Михаил Ермаков"
-              width="450" />
+              <img
+                srcset="./images/team-4-450.jpg 1x, ./images/team-4-900.jpg 2x"
+                src="./images/team-4-450.jpg"
+                alt="Михаил Ермаков"
+                width="450"
+              />
               <div class="team-list__person">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -370,7 +424,9 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__address">
-          <a class="logo footer__logo" href="./index.html">Web<span class="logo__half logo__half--footer">Studio</span></a>
+          <a class="logo footer__logo" href="./index.html"
+            >Web<span class="logo__half logo__half--footer">Studio</span></a
+          >
           <address class="address">
             г. Киев, пр-т Леси Украинки, 26
             <a class="address__mail" href="mailto:info@example.com">info@example.com</a>
@@ -426,8 +482,8 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
-          <svg class="modal-btn__icon" width="11" height="11">
+        <button class="modal-btn-close" type="button" data-modal-close>
+          <svg class="modal-btn-close__icon" width="11" height="11">
             <use href="./images/sprite.svg#icon-Vector"></use>
           </svg>
         </button>
@@ -469,10 +525,15 @@
           </label>
 
           <label class="confirmation">
-            <input class="confirmation__input-checkbox" type="checkbox" name="agreement" value="agree" />
+            <input
+              class="confirmation__input-checkbox"
+              type="checkbox"
+              name="agreement"
+              value="agree"
+            />
             <span class="confirmation__icon">
               <svg width="16px" height="15px">
-              <use href="./images/sprite.svg#icon-checkbox"></svg>
+                <use href="./images/sprite.svg#icon-checkbox"></use>
               </svg>
             </span>
             Соглашаюсь с рассылкой и принимаю
