@@ -1,5 +1,6 @@
 .advantage-section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .advantage-section__title {
@@ -8,13 +9,11 @@
 
 .advantage-list {
   @extend %list;
-  @include display-flex(center);
-  flex-wrap: wrap;
-  margin-right: -30px;
 
   &__title {
     @include text-decor(700, 14px, 1.14, 0.03em, $title-color);
 
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
@@ -23,15 +22,14 @@
     @include text-decor(400, 14px, 1.7, 0.03em, $text-color);
   }
 
-  &__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-right: 30px;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
 .advantage-list__icon {
   @include display-flex(center);
-  width: 270px;
+
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;

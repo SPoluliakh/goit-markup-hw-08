@@ -7,16 +7,15 @@
   letter-spacing: 0.02em;
 }
 
+.header__list,
+.header-contact {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  @include display-flex(space-between);
-}
-
-.header__nav {
-  @include display-flex(center);
 }
 
 .logo {
@@ -25,83 +24,10 @@
   display: block;
 
   &--header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 16px 0;
   }
 
   &__half {
     color: $logo-header-color;
   }
-}
-
-.header__list {
-  @extend %list;
-  @include display-flex(center);
-
-  margin-left: 93px;
-}
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header__link {
-  @extend %header-text-decor;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  @extend %link;
-
-  color: $nav-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $hover-color;
-  }
-}
-
-.header__link--current {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    display: block;
-    bottom: 1px;
-
-    content: ' ';
-    width: 100%;
-    height: 4px;
-
-    background-color: $hover-color;
-    border-radius: 2px;
-  }
-}
-
-.header-contact {
-  @include display-flex(center);
-  @extend %list;
-
-  &__link {
-    @include display-flex(center);
-    @extend %header-text-decor;
-    @extend %link;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $header-info-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: $hover-color;
-    }
-  }
-
-  &__icone {
-    fill: currentColor;
-    margin-right: 10px;
-  }
-}
-
-.header-contact__item:not(:last-child) {
-  margin-right: 30px;
 }
