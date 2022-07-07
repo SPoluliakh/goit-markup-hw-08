@@ -1,0 +1,110 @@
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-section__title {
+  @extend %visually-hidden;
+}
+
+.portfolio-section__nav {
+  @extend %list;
+  @include display-flex(center);
+  margin-bottom: 50px;
+}
+
+.portfolio-section__nav-list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-section__btn {
+  @include text-decor(500, 16px, 1.6, 0.03em, $btn-nav-color);
+
+  text-align: center;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+
+  background-color: $btn-nav-bcg-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $hover-color;
+    box-shadow: $btn-nav-hover-shadow;
+  }
+}
+
+.project-list {
+  @extend %list;
+  @include display-flex(center);
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.project-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &focus {
+    box-shadow: $portfolio-cards-shadow-hover;
+  }
+}
+
+.project-list__link {
+  @extend %link;
+}
+
+.project-list__titles {
+  padding: 20px 24px;
+  border-bottom: $project-list-titles-border;
+  border-left: $project-list-titles-border;
+  border-right: $project-list-titles-border;
+}
+
+.project-list__title {
+  @include text-decor(700, 18px, 2, 0.06em, $title-color);
+
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.project-list_subtitle {
+  @include text-decor(400, 16px, 1.9, 0.03em, $text-color);
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+// hidden-info
+.project-list__info {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-list__text {
+  position: absolute;
+  top: 100%;
+
+  padding: 63px 24px;
+
+  @include text-decor(400, 18px, 1.6, 0.03em, $accent-color);
+
+  background: $hidden-info-bcg-color;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .project-list__link:hover & {
+    transform: translateY(-100%);
+  }
+}

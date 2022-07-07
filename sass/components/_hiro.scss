@@ -1,0 +1,37 @@
+.hiro-section {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $hiro-footer-bcg-color;
+  background-image: linear-gradient($hiro-gradient-color, $hiro-gradient-color),
+    url(../images/hiro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hiro-section__title {
+  @include text-decor(900, 44px, 1.36, 0.06em, $accent-color);
+
+  text-transform: uppercase;
+
+  max-width: 696px;
+
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hiro-section__button {
+  @include button(10px, 32px);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
+}

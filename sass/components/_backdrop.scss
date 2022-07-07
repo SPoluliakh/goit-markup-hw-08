@@ -1,0 +1,205 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: $backdrop-color;
+
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background-color: $accent-color;
+  box-shadow: $ourteam-cards-shadow;
+  border-radius: 4px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+.modal-btn {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+
+  color: $modal-btn-color;
+  background-color: $accent-color;
+  border: $order-form__btn;
+  border-radius: 50%;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.order-form {
+  width: 448px;
+}
+
+.order-form__title {
+  @include text-decor(700, 20px, 1.15, 0.03em, $title-color);
+
+  text-align: center;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.order-form__label {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(-n + 4) {
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(5) {
+    margin-bottom: 20px;
+  }
+}
+
+.order-form__input {
+  padding: 11px 0 11px 42px;
+  width: 100%;
+
+  border: $order-form-input;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $hover-color;
+    outline: none;
+  }
+}
+
+.order-form__name {
+  @include text-decor(400, 12px, 1.17, 0.01em, $text-color);
+
+  margin-bottom: 4px;
+}
+
+.order-form__textarea {
+  resize: none;
+  padding: 12px 16px;
+  border: $order-form-input;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $hover-color;
+    outline: none;
+  }
+
+  &::placeholder {
+    @include text-decor(400, 12px, 1.17, 0.01em, $modal-placeholder-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
+//  castom-checkbox
+
+.confirmation {
+  @include display-flex(center);
+  @include text-decor(400, 14px, 2, 0.03em, $text-color);
+
+  margin-bottom: 30px;
+}
+
+.confirmation__icon {
+  @include display-flex(center);
+
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  background-origin: border-box;
+
+  border: 2px solid $modal-main-color;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .confirmation__input-checkbox:checked + & {
+    background-color: $hover-color;
+    border-color: transparent;
+  }
+}
+
+.confirmation__input-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  @extend %visually-hidden;
+}
+
+.confirmation__agreement {
+  @include text-decor(400, 14px, 1.7, 0.03em, $hover-color);
+  display: inline;
+
+  padding-left: 3px;
+}
+
+.order-form__btn {
+  @include button(10px, 55px);
+
+  display: block;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
+}
+
+.order-form__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .order-form__label:focus-within & {
+    fill: $hover-color;
+  }
+}
