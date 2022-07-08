@@ -32,6 +32,12 @@
             </li>
           </ul>
         </nav>
+        <!-- mobile-menu-btn -->
+        <button class="mobile-menu-btn" type="button" data-modal-open>
+          <svg class="mobile-menu-btn__open" width="40" height="40">
+            <use href="./images/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
 
         <ul class="header-contact">
           <li class="header-contact__item">
@@ -50,6 +56,44 @@
               +38 096 111 11 11
             </a>
           </li>
+        </ul>
+      </div>
+
+      <!-- mobile-menu -->
+
+      <div class="mobile-menu is-hidden" data-modal>
+        <button class="mobile-menu-btn" type="button" data-modal-close>
+          <svg class="mobile-menu-modal-btn__close" width="40" height="40">
+            <use href="./images/sprite.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu-contact">
+          <li class="mobile-menu-contact__item">
+            <a class="mobile-menu-contact__tel" href="tel:+38 0961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu-contact__item">
+            <a class="mobile-menu-contact__mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-sotial">
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Instagram</a></li>
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Twitter</a></li>
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Facebook</a></li>
+          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">LinkedIn</a></li>
         </ul>
       </div>
     </header>
@@ -79,7 +123,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/i.jpg" width="370" alt="ноутбук с изображением сайта" />
+                  <img
+                    srcset="./images/portfolio-1-450.jpg 1x, ./images/portfolio-1-900.jpg 2x"
+                    src="./images/portfolio-1-450.jpg"
+                    width="450"
+                    alt="ноутбук с изображением сайта"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -95,7 +144,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/one.jpg" width="370" alt="два баскетболиста в прыжке" />
+                  <img
+                    srcset="./images/portfolio-2-450.jpg 1x, ./images/portfolio-2-900.jpg 2x"
+                    src="./images/portfolio-2-450.jpg"
+                    width="450"
+                    alt="два баскетболиста в прыжке"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -111,7 +165,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/two.jpg" width="370" alt="назва ресторану з морепродуктамы" />
+                  <img
+                    srcset="./images/portfolio-3-450.jpg 1x, ./images/portfolio-3-900.jpg 2x"
+                    src="./images/portfolio-3-450.jpg"
+                    width="450"
+                    alt="назва ресторану з морепродуктамы"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -127,7 +186,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/thri.jpg" width="370" alt="черные наушники" />
+                  <img
+                    srcset="./images/portfolio-4-450.jpg 1x, ./images/portfolio-4-900.jpg 2x"
+                    src="./images/portfolio-4-450.jpg"
+                    width="450"
+                    alt="черные наушники"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -143,7 +207,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/four.jpg" width="370" alt="две коробки на белом фоне" />
+                  <img
+                    srcset="./images/portfolio-5-450.jpg 1x, ./images/portfolio-5-900.jpg 2x"
+                    src="./images/portfolio-5-450.jpg"
+                    width="450"
+                    alt="две коробки на белом фоне"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -159,7 +228,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/five.jpg" width="370" alt="монитор с заставкой" />
+                  <img
+                    srcset="./images/portfolio-6-450.jpg 1x, ./images/portfolio-6-900.jpg 2x"
+                    src="./images/portfolio-6-450.jpg"
+                    width="450"
+                    alt="монитор с заставкой"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -176,8 +250,9 @@
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
                   <img
-                    src="./images/six.jpg"
-                    width="370"
+                    srcset="./images/portfolio-7-450.jpg 1x, ./images/portfolio-7-900.jpg 2x"
+                    src="./images/portfolio-7-450.jpg"
+                    width="450"
                     alt="журнал лимитированя версия в открытом виде"
                   />
                   <p class="project-list__text">
@@ -195,7 +270,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/seven.jpg" width="370" alt="белая бирка с надписью" />
+                  <img
+                    srcset="./images/portfolio-8-450.jpg 1x, ./images/portfolio-8-900.jpg 2x"
+                    src="./images/portfolio-8-450.jpg"
+                    width="450"
+                    alt="белая бирка с надписью"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -211,7 +291,12 @@
             <li class="project-list__item">
               <a class="project-list__link" href=""
                 ><div class="project-list__info">
-                  <img src="./images/eight.jpg" width="370" alt="изображение ноутбука" />
+                  <img
+                    srcset="./images/portfolio-9-450.jpg 1x, ./images/portfolio-9-900.jpg 2x"
+                    src="./images/portfolio-9-450.jpg"
+                    width="450"
+                    alt="изображение ноутбука"
+                  />
                   <p class="project-list__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
