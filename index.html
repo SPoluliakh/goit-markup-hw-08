@@ -33,7 +33,7 @@
           </ul>
         </nav>
         <!-- mobile-menu-btn -->
-        <button class="mobile-menu-btn" type="button">
+        <button class="mobile-menu-btn" type="button" data-modal-open>
           <svg class="mobile-menu-btn__open" width="40" height="40">
             <use href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
@@ -61,8 +61,8 @@
 
       <!-- mobile-menu -->
 
-      <div class="mobile-menu">
-        <button class="mobile-menu-modal-btn" type="button">
+      <div class="mobile-menu is-hidden" data-modal>
+        <button class="mobile-menu-btn" type="button" data-modal-close>
           <svg class="mobile-menu-modal-btn__close" width="40" height="40">
             <use href="./images/sprite.svg#icon-mobile-close"></use>
           </svg>
@@ -102,7 +102,7 @@
       <!--Герой-->
       <section class="hiro-section">
         <h1 class="hiro-section__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hiro-section__button" data-modal-open type="button">Заказать услугу</button>
+        <button class="hiro-section__button" type="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!--Секция преимуществ-->
