@@ -646,6 +646,17 @@ body.modal-open {
           transform: translateY(-100%);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list:last-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .project-list__titles--tablet {
+    padding: 20px 24px 56px 24px;
+  }
+}
 .address__phone, .address__mail {
   font-family: "Roboto", sans-serif;
   font-style: normal;
