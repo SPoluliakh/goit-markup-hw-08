@@ -213,12 +213,12 @@
           <ul class="team-list">
             <li class="team-list__item">
               <picture>
-                <soursce
+                <source
                   srcset="./images/team-1-450.jpg 1x, ./images/team-1-900.jpg 2x"
-                  media="(max-width: 767px)"
+                  media="(max-width:767px)"
                 />
-                <soursce
-                  srcset="./images/team-1-768.jpg 1x, ./images/team-1-1356.jpg 2x"
+                <source
+                  srcset="./images/team-1-768.jpg 1x, ./images/team-1-1536.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <img src="./images/team-1-768.jpg" alt="Игорь Демьяненко" />
@@ -257,15 +257,16 @@
             </li>
 
             <li class="team-list__item">
-               <soursce
+              <picture>
+                <source
                   srcset="./images/team-2-450.jpg 1x, ./images/team-2-900.jpg 2x"
-                  media="(max-width: 767px)"
+                  media="(max-width:767px)"
                 />
-                <soursce
-                  srcset="./images/team-2-768.jpg 1x, ./images/team-2-1356.jpg 2x"
+                <source
+                  srcset="./images/team-2-768.jpg 1x, ./images/team-2-1536.jpg 2x"
                   media="(min-width: 768px)"
                 />
-                <img src="./images/team-2-768.jpg" alt="Ольга Репина" />
+                <img src="./images/team-1-768.jpg" alt="Игорь Демьяненко" />
               </picture>
               <div class="team-list__person">
                 <h3 class="team-list__title">Ольга Репина</h3>
@@ -301,12 +302,12 @@
 
             <li class="team-list__item">
               <picture>
-                <soursce
+                <source
                   srcset="./images/team-3-450.jpg 1x, ./images/team-3-900.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <soursce
-                  srcset="./images/team-3-768.jpg 1x, ./images/team-3-1356.jpg 2x"
+                <source
+                  srcset="./images/team-3-768.jpg 1x, ./images/team-3-1536.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <img src="./images/team-3-768.jpg" alt="Николай Тарасов" />
@@ -345,14 +346,15 @@
 
             <li class="team-list__item">
               <picture>
-                <soursce
+                <source
                   srcset="./images/team-4-450.jpg 1x, ./images/team-4-900.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <soursce
-                  srcset="./images/team-4-768.jpg 1x, ./images/team-4-1356.jpg 2x"
+                <source
+                  srcset="./images/team-4-768.jpg 1x, ./images/team-4-1536.jpg 2x"
                   media="(min-width: 768px)"
                 />
+
                 <img src="./images/team-4-768.jpg" alt="Михаил Ермаков" />
               </picture>
               <div class="team-list__person">
@@ -442,44 +444,46 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <a class="logo footer__logo" href="./index.html"
-            >Web<span class="logo__half logo__half--footer">Studio</span></a
-          >
-          <address class="address">
-            г. Киев, пр-т Леси Украинки, 26
-            <a class="address__mail" href="mailto:info@example.com">info@example.com</a>
-            <a class="address__phone" href="tel:+380991111111">+38 099 111 11 11</a>
-          </address>
-        </div>
-        <div class="call">
-          <em class="call__title">присоединяйтесь</em>
-          <ul class="call__list">
-            <li class="call__item">
-              <a class="call__link" href=""
-                ><svg class="call__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="call__item">
-              <a class="call__link" href=""
-                ><svg class="call__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="call__item">
-              <a class="call__link" href=""
-                ><svg class="call__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="call__item">
-              <a class="call__link" href=""
-                ><svg class="call__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+        <div class="footer__thumb">
+          <div class="footer__address">
+            <a class="logo footer__logo" href="./index.html"
+              >Web<span class="logo__half logo__half--footer">Studio</span></a
+            >
+            <address class="address">
+              г. Киев, пр-т Леси Украинки, 26
+              <a class="address__mail" href="mailto:info@example.com">info@example.com</a>
+              <a class="address__phone" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+          </div>
+          <div class="call">
+            <em class="call__title">присоединяйтесь</em>
+            <ul class="call__list">
+              <li class="call__item">
+                <a class="call__link" href=""
+                  ><svg class="call__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="call__item">
+                <a class="call__link" href=""
+                  ><svg class="call__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="call__item">
+                <a class="call__link" href=""
+                  ><svg class="call__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="call__item">
+                <a class="call__link" href=""
+                  ><svg class="call__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <form class="subscription" name="subscription">
@@ -565,6 +569,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
   </body>
 </html>
