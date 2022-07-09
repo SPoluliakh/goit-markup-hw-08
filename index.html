@@ -33,7 +33,7 @@
           </ul>
         </nav>
         <!-- mobile-menu-btn -->
-        <button class="mobile-menu-btn" type="button" data-modal-open>
+        <button class="mobile-menu-btn is-close" type="button" data-menu-open>
           <svg class="mobile-menu-btn__open" width="40" height="40">
             <use href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
@@ -61,8 +61,8 @@
 
       <!-- mobile-menu -->
 
-      <div class="mobile-menu is-hidden" data-modal>
-        <button class="mobile-menu-btn" type="button" data-modal-close>
+      <div class="mobile-menu" data-menu>
+        <button class="mobile-menu-btn" type="button" data-menu-close>
           <svg class="mobile-menu-modal-btn__close" width="40" height="40">
             <use href="./images/sprite.svg#icon-mobile-close"></use>
           </svg>
@@ -585,6 +585,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
