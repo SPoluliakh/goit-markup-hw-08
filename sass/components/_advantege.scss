@@ -1,6 +1,11 @@
 .advantage-section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantage-section__title {
@@ -16,6 +21,11 @@
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: -30px;
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -37,13 +47,21 @@
 
 .advantage-list__item {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 

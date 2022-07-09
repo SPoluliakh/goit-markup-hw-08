@@ -308,17 +308,6 @@ body.modal-open {
   color: inherit;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #2196f3;
-}
-
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -331,6 +320,11 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -387,6 +381,11 @@ body.modal-open {
     display: none;
   }
 }
+@media screen and (max-width: 1200px) {
+  .header__list {
+    margin-left: 93px;
+  }
+}
 
 .header__item:not(:last-child) {
   margin-right: 50px;
@@ -395,6 +394,25 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .header-contact {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -418,6 +436,17 @@ body.modal-open {
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 .header-contact__link:hover, .header-contact__link:focus {
   color: #2196f3;
@@ -457,6 +486,14 @@ body.modal-open {
 }
 
 .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #2196f3;
   display: block;
 }
 .logo--header {
@@ -465,6 +502,19 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .logo--header {
     padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    padding: 24px 0 25px 0;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #2196f3;
   }
 }
 .logo__half {

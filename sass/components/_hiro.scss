@@ -38,6 +38,26 @@
         url('/images/tablet-hiro-1536.jpg');
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient($hiro-gradient-color, $hiro-gradient-color),
+      url('/images/hiro-1600.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hiro-gradient-color, $hiro-gradient-color),
+        url('/images/hiro-3200.jpg');
+    }
+  }
 }
 
 .hiro-section__title {
@@ -50,6 +70,11 @@
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and(min-width:1200px) {
+    @include text-decor(900, 44px, 1.36, 0.06em, $accent-color);
+    max-width: 696px;
+  }
 }
 
 .hiro-section__button {
