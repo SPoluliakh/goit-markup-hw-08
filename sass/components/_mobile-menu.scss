@@ -28,7 +28,7 @@
   visibility: hidden;
 }
 
-.mobile-menu-btn {
+.mobile-menu__btn {
   position: absolute;
   top: 10px;
   right: 8px;
@@ -49,8 +49,8 @@
   }
 }
 
-.mobile-menu-btn__open,
-.mobile-menu-modal-btn__close {
+.mobile-menu__open,
+.mobile-menu__close {
   fill: currentColor;
 }
 

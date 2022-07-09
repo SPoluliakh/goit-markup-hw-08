@@ -1060,7 +1060,7 @@ body.modal-open {
   visibility: hidden;
 }
 
-.mobile-menu-btn {
+.mobile-menu__btn {
   position: absolute;
   top: 10px;
   right: 8px;
@@ -1070,18 +1070,18 @@ body.modal-open {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu-btn {
+  .mobile-menu__btn {
     display: none;
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.mobile-menu-btn:hover, .mobile-menu-btn:focus {
+.mobile-menu__btn:hover, .mobile-menu__btn:focus {
   color: #2196f3;
 }
 
-.mobile-menu-btn__open,
-.mobile-menu-modal-btn__close {
+.mobile-menu__open,
+.mobile-menu__close {
   fill: currentColor;
 }
 
