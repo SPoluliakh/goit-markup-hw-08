@@ -18,6 +18,10 @@
     flex-wrap: nowrap;
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-section__nav-list:nth-child(-n + 3) {
@@ -77,6 +81,10 @@
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
   }
 
   &:not(:last-child) {
