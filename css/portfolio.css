@@ -540,6 +540,13 @@ body.modal-open {
       flex-wrap: wrap;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 399px) {
+  .portfolio-section__nav {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 768px) {
   .portfolio-section__nav {
     display: -webkit-box;
@@ -1065,6 +1072,8 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .mobile-menu-btn:hover, .mobile-menu-btn:focus {

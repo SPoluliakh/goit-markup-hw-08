@@ -13,6 +13,10 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
+  @media screen and (max-width: 399px) {
+    align-items: baseline;
+  }
+
   @media screen and (min-width: 768px) {
     @include display-flex(center);
     flex-wrap: nowrap;
