@@ -23,6 +23,11 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    @include display-flex(space-between);
+    align-items: baseline;
+  }
 }
 
 .footer__thumb {
@@ -30,10 +35,21 @@
   align-items: baseline;
 
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+
+    @include display-flex(space-between);
+    align-items: baseline;
+  }
 }
 
 .footer__address {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -74,6 +90,9 @@
   @media screen and (min-width: 768px) {
     margin: 0;
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
@@ -123,6 +142,13 @@
     width: 450px;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: 578px;
+
+    margin-left: auto;
+  }
 }
 
 .subscription__title {
@@ -131,6 +157,10 @@
   display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscription__btn {
@@ -142,6 +172,11 @@
   &:hover,
   &:focus {
     background-color: $btn-hover-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 12px;
+    display: inline-flex;
   }
 }
 
@@ -156,6 +191,11 @@
   border: $footer-input-border;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
 
   &::placeholder {
     color: $footer-info-color;

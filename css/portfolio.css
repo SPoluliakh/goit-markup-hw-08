@@ -732,6 +732,22 @@ body.modal-open {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .footer__thumb {
   display: -webkit-box;
@@ -747,9 +763,31 @@ body.modal-open {
           align-items: baseline;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__thumb {
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .footer__address {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -788,6 +826,11 @@ body.modal-open {
   .call {
     margin: 0;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .call {
+    margin-left: 70px;
   }
 }
 
@@ -855,6 +898,13 @@ body.modal-open {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin: 0;
+    width: 578px;
+    margin-left: auto;
+  }
+}
 
 .subscription__title {
   font-family: "Roboto", sans-serif;
@@ -868,6 +918,11 @@ body.modal-open {
   display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__title {
+    text-align: left;
+  }
 }
 
 .subscription__btn {
@@ -903,6 +958,14 @@ body.modal-open {
 .subscription__btn:hover, .subscription__btn:focus {
   background-color: #188ce8;
 }
+@media screen and (min-width: 1200px) {
+  .subscription__btn {
+    margin: 0 0 0 12px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
 
 .subscription__input {
   font-family: "Roboto", sans-serif;
@@ -920,6 +983,12 @@ body.modal-open {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
 .subscription__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
