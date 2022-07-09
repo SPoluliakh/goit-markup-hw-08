@@ -54,7 +54,7 @@
   fill: currentColor;
 }
 
-.mobile-menu-modal-btn__close {
+.mobile-menu__close {
   position: absolute;
   top: 0px;
   right: 15px;
@@ -65,7 +65,7 @@
 }
 
 .mobile-menu__list,
-.mobile-menu-contact,
+.mobile-contact,
 .mobile-sotial {
   @extend %list;
 }
@@ -79,21 +79,21 @@
   margin-bottom: 32px;
 }
 
-.mobile-menu-contact__tel {
+.mobile-contact__tel {
   @extend %link;
   @include text-decor(500, 34px, 1.17, 0.02em, $hover-color);
 }
 
-.mobile-menu-contact__mail {
+.mobile-contact__mail {
   @extend %link;
   @include text-decor(500, 24px, 1.17, 0.02em, $text-color);
 }
 
-.mobile-menu-contact__item:nth-child(1) {
+.mobile-contact__item:nth-child(1) {
   margin-bottom: 32px;
 }
 
-.mobile-menu-contact {
+.mobile-contact {
   margin-bottom: 64px;
 }
 

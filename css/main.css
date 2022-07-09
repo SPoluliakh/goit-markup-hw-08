@@ -296,14 +296,14 @@ body.modal-open {
 }
 
 .mobile-menu__list,
-.mobile-menu-contact,
+.mobile-contact,
 .mobile-sotial, .call__list, .clients-list, .social, .team-list, .examples-list, .advantage-list, .header-contact, .header__list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.mobile-sotial__link, .mobile-menu-contact__mail, .mobile-menu-contact__tel, .mobile-menu__link, .examples-list__link, .header__link, .header-contact__link {
+.mobile-sotial__link, .mobile-contact__mail, .mobile-contact__tel, .mobile-menu__link, .examples-list__link, .header__link, .header-contact__link {
   text-decoration: none;
   color: inherit;
 }
@@ -1744,7 +1744,7 @@ body.modal-open {
   fill: currentColor;
 }
 
-.mobile-menu-modal-btn__close {
+.mobile-menu__close {
   position: absolute;
   top: 0px;
   right: 15px;
@@ -1768,7 +1768,7 @@ body.modal-open {
   margin-bottom: 32px;
 }
 
-.mobile-menu-contact__tel {
+.mobile-contact__tel {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1778,7 +1778,7 @@ body.modal-open {
   color: #2196f3;
 }
 
-.mobile-menu-contact__mail {
+.mobile-contact__mail {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1788,11 +1788,11 @@ body.modal-open {
   color: #757575;
 }
 
-.mobile-menu-contact__item:nth-child(1) {
+.mobile-contact__item:nth-child(1) {
   margin-bottom: 32px;
 }
 
-.mobile-menu-contact {
+.mobile-contact {
   margin-bottom: 64px;
 }
 
