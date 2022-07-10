@@ -2,20 +2,20 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-
-  position: relative;
 }
 
 .mobile-menu__container {
   @include display-flex(space-between);
+
+  position: relative;
 }
 
 .menu-container {
   z-index: 10;
   position: fixed;
   top: 0;
-  // top: 48px;
   left: 0;
+
   width: 100%;
   padding-bottom: 88px;
   padding-top: 48px;
@@ -38,10 +38,6 @@
   pointer-events: all;
   opacity: 1;
   visibility: visible;
-}
-
-.menu-container.is-open .logo--header {
-  display: none;
 }
 
 .menu-button {
