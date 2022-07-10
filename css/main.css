@@ -1695,7 +1695,7 @@ body.modal-open {
   }
 }
 
-.mobile-menu--container {
+.mobile-menu__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
