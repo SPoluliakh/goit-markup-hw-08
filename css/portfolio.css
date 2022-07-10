@@ -473,6 +473,10 @@ body.modal-open {
   color: #2196f3;
 }
 
+.header__link--current {
+  color: #2196f3;
+}
+
 .header__link--current::after {
   position: absolute;
   top: 76px;
@@ -1030,6 +1034,9 @@ body.modal-open {
   margin-left: 10px;
 }
 
+.mobile-menu {
+  position: relative;
+}
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -1048,16 +1055,14 @@ body.modal-open {
           align-items: center;
 }
 
-.mobile-menu {
-  position: relative;
-}
-
 .menu-container {
   z-index: 10;
-  position: absolute;
-  top: 48px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
+  padding-bottom: 88px;
+  padding-top: 48px;
   height: 796px;
   padding-left: 40px;
   overflow-y: scroll;
@@ -1080,6 +1085,10 @@ body.modal-open {
 }
 
 .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  z-index: 20;
   padding: 0;
   margin: 0;
   background-color: transparent;

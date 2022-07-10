@@ -2,22 +2,23 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  position: relative;
 }
 
 .mobile-menu__container {
   @include display-flex(space-between);
 }
 
-.mobile-menu {
-  position: relative;
-}
-
 .menu-container {
   z-index: 10;
-  position: absolute;
-  top: 48px;
+  position: fixed;
+  top: 0;
+  // top: 48px;
   left: 0;
   width: 100%;
+  padding-bottom: 88px;
+  padding-top: 48px;
   height: 796px;
 
   padding-left: 40px;
@@ -44,6 +45,11 @@
 }
 
 .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  z-index: 20;
+
   padding: 0;
   margin: 0;
 

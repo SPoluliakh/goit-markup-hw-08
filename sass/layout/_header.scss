@@ -98,6 +98,10 @@
   }
 }
 
+.header__link--current {
+  color: $hover-color;
+}
+
 .header__link--current::after {
   position: absolute;
   top: 76px;
