@@ -476,7 +476,6 @@ body.modal-open {
 .header__link--current {
   color: #2196f3;
 }
-
 .header__link--current::after {
   position: absolute;
   top: 76px;
