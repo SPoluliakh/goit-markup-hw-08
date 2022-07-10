@@ -527,6 +527,12 @@ body.modal-open {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .portfolio-section__nav {
   display: -webkit-box;
