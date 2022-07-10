@@ -13,7 +13,7 @@
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 48px;
   left: 0;
   width: 100%;
@@ -22,7 +22,6 @@
   overflow-y: scroll;
 
   background-color: $accent-color;
-  box-shadow: $mobile-menu-shadow;
 
   pointer-events: none;
   opacity: 0;

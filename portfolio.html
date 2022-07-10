@@ -33,11 +33,6 @@
           </ul>
         </nav>
         <!-- mobile-menu-btn -->
-        <button class="mobile-menu__btn is-close" type="button" data-menu-open>
-          <svg class="mobile-menu__open" width="40" height="40">
-            <use href="./images/sprite.svg#icon-mobile-menu"></use>
-          </svg>
-        </button>
 
         <ul class="header-contact">
           <li class="header-contact__item">
@@ -61,38 +56,67 @@
 
       <!-- mobile-menu -->
 
-      <div class="mobile-menu" data-menu>
-        <button class="mobile-menu__btn" type="button" data-menu-close>
-          <svg class="mobile-menu__close" width="40" height="40">
-            <use href="./images/sprite.svg#icon-mobile-close"></use>
-          </svg>
-        </button>
+      <div class="mobile-menu">
+        <div class="container mobile-menu--container">
+          <a class="logo logo--header" href="./index.html"
+            >Web<span class="logo__half">Studio</span></a
+          >
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu-button__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
 
-        <nav class="mobile-menu__nav">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="./index.html">Студия</a>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact">
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__tel" href="tel:+38 0961111111">+38 096 111 11 11</a>
             </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="mobile-contact">
-          <li class="mobile-contact__item">
-            <a class="mobile-contact__tel" href="tel:+38 0961111111">+38 096 111 11 11</a>
-          </li>
-          <li class="mobile-contact__item">
-            <a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="mobile-sotial">
-          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Instagram</a></li>
-          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Twitter</a></li>
-          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">Facebook</a></li>
-          <li class="mobile-sotial__item"><a class="mobile-sotial__link" href="">LinkedIn</a></li>
-        </ul>
+          <ul class="mobile-sotial">
+            <li class="mobile-sotial__item">
+              <a class="mobile-sotial__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-sotial__item">
+              <a class="mobile-sotial__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-sotial__item">
+              <a class="mobile-sotial__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-sotial__item">
+              <a class="mobile-sotial__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
