@@ -11,15 +11,15 @@
 }
 
 .menu-container {
-  z-index: 10;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
 
   width: 100%;
-  padding-bottom: 88px;
+  padding-bottom: 48px;
   padding-top: 48px;
-  height: 796px;
+  height: 100%;
 
   padding-left: 40px;
   overflow-y: scroll;
@@ -81,7 +81,7 @@
 }
 
 .mobile-menu__nav {
-  margin-bottom: 306px;
+  margin-bottom: 302px;
 }
 
 .mobile-menu__list,
