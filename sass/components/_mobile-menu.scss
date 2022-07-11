@@ -33,7 +33,7 @@
 }
 
 .menu-container.is-open {
-  pointer-events: all;
+  pointer-events: initial;
   opacity: 1;
   visibility: visible;
 }
