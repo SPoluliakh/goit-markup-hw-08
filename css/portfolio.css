@@ -1118,6 +1118,9 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.mobile-menu__link--current {
+  color: #2196f3;
+}
 
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;

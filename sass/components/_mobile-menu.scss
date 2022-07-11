@@ -116,6 +116,10 @@
 .mobile-menu__link {
   @extend %link;
   @include text-decor(500, 40px, 1.17, 0.02em, $title-color);
+
+  &--current {
+    color: $hover-color;
+  }
 }
 
 .mobile-menu__item:not(:last-child) {
