@@ -155,6 +155,10 @@
 .mobile-sotial__link {
   @extend %link;
   @include text-decor(500, 18px, 1.2, 0.02em, $hover-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
 }
 
 .mobile-sotial__item:not(:last-child)::after {

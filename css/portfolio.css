@@ -1197,6 +1197,11 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media screen and (max-width: 479px) {
+  .mobile-sotial__link {
+    font-size: 12px;
+  }
+}
 
 .mobile-sotial__item:not(:last-child)::after {
   content: " ";
