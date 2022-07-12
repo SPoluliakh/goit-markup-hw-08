@@ -17,6 +17,7 @@
   width: 100%;
   padding-bottom: 48px;
   padding-top: 48px;
+
   height: 100%;
 
   padding-left: 40px;
@@ -103,8 +104,11 @@
 //   display: none;
 // }
 
-.mobile-menu__nav {
-  margin-bottom: 302px;
+.mobile-menu__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .mobile-menu__list,
