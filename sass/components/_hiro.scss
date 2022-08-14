@@ -12,6 +12,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 768px;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -22,7 +25,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    max-width: 1600px;
 
     background-image: linear-gradient($hiro-gradient-color, $hiro-gradient-color),
       url('../images/tablet-hiro-768.jpg');
